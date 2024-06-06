@@ -13,7 +13,6 @@ test.beforeEach(async() => {
 test.afterEach(async() => {
     console.log('afterEach')
 })
-
 test.describe('begin', ()=>{
 test('grouping1', async ({ page }) => {
 console.log('tezt1')
