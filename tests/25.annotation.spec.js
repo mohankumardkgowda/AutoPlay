@@ -7,7 +7,6 @@ test.only('tezt1', async({page})=>{
 test.skip('tezt2', async({page})=>{
     console.log('print tezt1')
 })
-
 test('tezt3', async({page, browserName})=>{
     console.log('print tezt1')
     if(browserName==='chromium'){//skip bazed on condition
@@ -30,7 +29,7 @@ test('tezt6', async({page})=>{
     }
     })
 
-test('tezt5', async({page})=>{
+test('tezt51', async({page})=>{
         test.slow()//in default any execution failure time iz 30s, but slow() make it triple 30*3
             console.log('print tezt1')//fail after 90s if not executed complitly
     })
