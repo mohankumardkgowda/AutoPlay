@@ -8,6 +8,7 @@ await page.locator("//a[@id='login2']").click()
 await page.locator("//input[@id='loginusername']").fill("pavanol")
 await page.locator("//input[@id='loginpassword']").fill("test@123")
 await page.locator("//button[@onclick='logIn()']").click()
+
 })
 
 test.afterAll(async() => {
