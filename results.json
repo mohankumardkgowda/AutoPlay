@@ -95,115 +95,60 @@
   },
   "suites": [
     {
-      "title": "28.report.spec.js",
-      "file": "28.report.spec.js",
+      "title": "27.multiple_page.spec.js",
+      "file": "27.multiple_page.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "tezt1",
-          "ok": false,
+          "title": "multiple page",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "firefox",
+              "projectName": "firefox",
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31081,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 10084,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\28.report.spec.js",
-                        "column": 12,
-                        "line": 3
-                      },
-                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://testautomationpractice.blogspot.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mconst\u001b[39m { test\u001b[33m,\u001b[39m expect } \u001b[33m=\u001b[39m require(\u001b[32m'@playwright/test'\u001b[39m)\u001b[90m//import\u001b[39m\n \u001b[90m 2 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'tezt1'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://testautomationpractice.blogspot.com/'\u001b[39m)\n \u001b[90m   |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='name']\"\u001b[39m))\u001b[33m.\u001b[39mtoBeEditable()\n \u001b[90m 5 |\u001b[39m })\n \u001b[90m 6 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\28.report.spec.js:3:12\u001b[22m"
+                      "text": "\u001b[33m2\u001b[39m\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-03T15:20:51.690Z",
+                  "startTime": "2024-06-06T16:56:43.533Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\test-finished-2.png"
                     },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium\\trace.zip"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 1,
-                  "status": "timedOut",
-                  "duration": 32688,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\28.report.spec.js",
-                        "column": 12,
-                        "line": 3
-                      },
-                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://testautomationpractice.blogspot.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mconst\u001b[39m { test\u001b[33m,\u001b[39m expect } \u001b[33m=\u001b[39m require(\u001b[32m'@playwright/test'\u001b[39m)\u001b[90m//import\u001b[39m\n \u001b[90m 2 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'tezt1'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://testautomationpractice.blogspot.com/'\u001b[39m)\n \u001b[90m   |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@id='name']\"\u001b[39m))\u001b[33m.\u001b[39mtoBeEditable()\n \u001b[90m 5 |\u001b[39m })\n \u001b[90m 6 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\28.report.spec.js:3:12\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-06-03T15:21:24.188Z",
-                  "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium-retry1\\video.webm"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\28.report-tezt1-chromium-retry1\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "68284260072dcf1743a1-c7831c07f032f4db0cf3",
-          "file": "28.report.spec.js",
+          "id": "ee2aba6399dab3cb4fa9-f34a3a69c8039598b01c",
+          "file": "27.multiple_page.spec.js",
           "line": 2,
           "column": 6
         }
@@ -212,11 +157,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-03T15:20:50.860Z",
-    "duration": 66674.518,
-    "expected": 0,
+    "startTime": "2024-06-06T16:56:42.652Z",
+    "duration": 12209.317,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

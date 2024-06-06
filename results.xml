@@ -1,91 +1,14 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="66.67451799999999">
-<testsuite name="28.report.spec.js" timestamp="2024-06-03T15:20:50.920Z" hostname="chromium" tests="1" failures="1" skipped="0" time="63.769" errors="0">
-<testcase name="tezt1" classname="28.report.spec.js" time="63.769">
-<failure message="28.report.spec.js:2:6 tezt1" type="FAILURE">
-<![CDATA[  [chromium] › 28.report.spec.js:2:6 › tezt1 ───────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: page.goto: Test timeout of 30000ms exceeded.
-    Call log:
-      - navigating to "https://testautomationpractice.blogspot.com/", waiting until "load"
-
-
-      1 | const { test, expect } = require('@playwright/test')//import
-      2 | test.only('tezt1',async({page}) => {
-    > 3 | await page.goto('https://testautomationpractice.blogspot.com/')
-        |            ^
-      4 | await expect(page.locator("//input[@id='name']")).toBeEditable()
-      5 | })
-      6 |
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\28.report.spec.js:3:12
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\28.report-tezt1-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: page.goto: Test timeout of 30000ms exceeded.
-    Call log:
-      - navigating to "https://testautomationpractice.blogspot.com/", waiting until "load"
-
-
-      1 | const { test, expect } = require('@playwright/test')//import
-      2 | test.only('tezt1',async({page}) => {
-    > 3 | await page.goto('https://testautomationpractice.blogspot.com/')
-        |            ^
-      4 | await expect(page.locator("//input[@id='name']")).toBeEditable()
-      5 | })
-      6 |
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\28.report.spec.js:3:12
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\28.report-tezt1-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\28.report-tezt1-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.209316999999999">
+<testsuite name="27.multiple_page.spec.js" timestamp="2024-06-06T16:56:42.758Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.084" errors="0">
+<testcase name="multiple page" classname="27.multiple_page.spec.js" time="10.084">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\28.report-tezt1-chromium\test-failed-1.png]]
+<![CDATA[[33m2[39m
 
-[[ATTACHMENT|test-results\28.report-tezt1-chromium\video.webm]]
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\test-finished-2.png]]
 
-[[ATTACHMENT|test-results\28.report-tezt1-chromium\trace.zip]]
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\28.report-tezt1-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\28.report-tezt1-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\28.report-tezt1-chromium-retry1\trace.zip]]
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>
