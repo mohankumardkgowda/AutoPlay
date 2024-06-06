@@ -1,5 +1,5 @@
 const { test, expect,chromium } = require('@playwright/test')//import
-test.only('multiple page', async()=>{
+test('multiple page', async()=>{
    
 const browzer=await chromium.launch()
 const context=await browzer.newContext()
