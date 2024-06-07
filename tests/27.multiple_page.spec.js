@@ -34,7 +34,7 @@ test('auto multiple page', async()=>{
     const newpage=await pagePromise
     await expect(newpage).toHaveTitle("STORE")
 await page1.waitForEvent(3000)
-await newpage.waitForEvent(3000)    
+await newpage.waitForEvent(5000)    
 await browzer.close()
 })
     
