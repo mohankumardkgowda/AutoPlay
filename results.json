@@ -95,13 +95,13 @@
   },
   "suites": [
     {
-      "title": "27.multiple_page.spec.js",
-      "file": "27.multiple_page.spec.js",
+      "title": "3.Locator_builtin.spec.js",
+      "file": "3.Locator_builtin.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "multiple page",
+          "title": "Locator",
           "ok": true,
           "tags": [],
           "tests": [
@@ -115,31 +115,27 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11639,
+                  "duration": 13498,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33m2\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-06T17:09:42.496Z",
+                  "startTime": "2024-06-24T09:55:48.324Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\test-finished-2.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\test-finished-1.png"
                     },
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\test-finished-1.png"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-firefox\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\trace.zip"
                     }
                   ]
                 }
@@ -147,100 +143,9 @@
               "status": "expected"
             }
           ],
-          "id": "ee2aba6399dab3cb4fa9-f34a3a69c8039598b01c",
-          "file": "27.multiple_page.spec.js",
+          "id": "ca4b3ebb1c1d0712d423-15b89b354bef35cfc2f2",
+          "file": "3.Locator_builtin.spec.js",
           "line": 2,
-          "column": 1
-        },
-        {
-          "title": "auto multiple page",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31434,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-06-06T17:09:54.820Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox\\test-failed-3.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox\\test-failed-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox\\test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox\\trace.zip"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 1,
-                  "status": "timedOut",
-                  "duration": 31197,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-06-06T17:10:28.279Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-firefox-retry1\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "ee2aba6399dab3cb4fa9-23341d729d9f4ea2bbb0",
-          "file": "27.multiple_page.spec.js",
-          "line": 21,
           "column": 1
         }
       ]
@@ -248,11 +153,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-06T17:09:41.512Z",
-    "duration": 78945.79599999999,
+    "startTime": "2024-06-24T09:55:47.461Z",
+    "duration": 17330.213,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

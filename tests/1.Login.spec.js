@@ -4,7 +4,6 @@ test('Login', async ({ page }) => {
   const pageTitle = await page.title()
   console.log('Page Title:', pageTitle)
   await expect(page).toHaveTitle('STORE')
-
   //new merge added
   await page.waitForEvent(3000)
 //workingm

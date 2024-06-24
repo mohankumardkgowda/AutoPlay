@@ -1,73 +1,13 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="78.94579599999999">
-<testsuite name="27.multiple_page.spec.js" timestamp="2024-06-06T17:09:41.669Z" hostname="firefox" tests="2" failures="1" skipped="0" time="74.27" errors="0">
-<testcase name="multiple page" classname="27.multiple_page.spec.js" time="11.639">
-<system-out>
-<![CDATA[[33m2[39m
-
-[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\test-finished-2.png]]
-
-[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\27.multiple_page-multiple-page-firefox\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="auto multiple page" classname="27.multiple_page.spec.js" time="62.631">
-<failure message="27.multiple_page.spec.js:21:1 auto multiple page" type="FAILURE">
-<![CDATA[  [firefox] › 27.multiple_page.spec.js:21:1 › auto multiple page ───────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-3.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-2.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\27.multiple_page-auto-multiple-page-firefox\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\27.multiple_page-auto-multiple-page-firefox-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\27.multiple_page-auto-multiple-page-firefox-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="17.330213">
+<testsuite name="3.Locator_builtin.spec.js" timestamp="2024-06-24T09:55:47.515Z" hostname="firefox" tests="1" failures="0" skipped="0" time="13.498" errors="0">
+<testcase name="Locator" classname="3.Locator_builtin.spec.js" time="13.498">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-3.png]]
+[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-2.png]]
+[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\video.webm]]
 
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox\trace.zip]]
-
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-firefox-retry1\trace.zip]]
+[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>
