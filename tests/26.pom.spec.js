@@ -15,8 +15,7 @@ await page.waitForTimeout(5000)
 const product_cart=new product(page)
 await product_cart.addtocart()
 await product_cart.cartbtn()
-await page.waitForTimeout(5000) 
-
+await page.waitForTimeout(3000) 
 
 //verify & order
 const buyorder=new cart(page)
