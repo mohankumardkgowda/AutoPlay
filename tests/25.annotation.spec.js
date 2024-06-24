@@ -29,7 +29,7 @@ test('tezt6', async({page})=>{
     }
     })
 
-test('tezt51', async({page})=>{
+test('tezt try', async({page})=>{
         test.slow()//in default any execution failure time iz 30s, but slow() make it triple 30*3
             console.log('print tezt1')//fail after 90s if not executed complitly
     })
