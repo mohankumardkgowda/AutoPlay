@@ -5,20 +5,17 @@ import { cart } from './pagez/cart'
 
 
 test('login', async ({ page }) => {
-
     //login
 const login=new loginpage(page)
 await login.gotoLoginpage()
 await login.login('pavanol','test@123')
 await page.waitForTimeout(5000)
 
-
 //product
 const product_cart=new product(page)
 await product_cart.addtocart()
 await product_cart.cartbtn()
-await page.waitForTimeout(5000) 
-
+await page.waitForTimeout(3000) 
 
 //verify & order
 const buyorder=new cart(page)
