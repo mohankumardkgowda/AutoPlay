@@ -1,13 +1,87 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="17.330213">
-<testsuite name="3.Locator_builtin.spec.js" timestamp="2024-06-24T09:55:47.515Z" hostname="firefox" tests="1" failures="0" skipped="0" time="13.498" errors="0">
-<testcase name="Locator" classname="3.Locator_builtin.spec.js" time="13.498">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="42.558884">
+<testsuite name="2.Locator.spec.js" timestamp="2024-06-24T11:04:01.736Z" hostname="firefox" tests="1" failures="1" skipped="0" time="39.424" errors="0">
+<testcase name="Locator" classname="2.Locator.spec.js" time="39.424">
+<failure message="2.Locator.spec.js:2:1 Locator" type="FAILURE">
+<![CDATA[  [firefox] › 2.Locator.spec.js:2:1 › Locator ──────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('//a[@id="logout2"]')
+    Expected: visible
+    Received: hidden
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for locator('//a[@id="logout2"]')
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
+      -   unexpected value "hidden"
+
+
+      10 |  await page.locator('button[onclick="logIn()"]').click()//id
+      11 |  const logout= await page.locator('//a[@id="logout2"]')
+    > 12 |  await expect(logout).toBeVisible()
+         |                       ^
+      13 |  await logout.click();
+      14 |
+      15 |
+
+        at C:\Users\mohank\Desktop\PlayAutomation\tests\2.Locator.spec.js:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\2.Locator-Locator-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\2.Locator-Locator-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\2.Locator-Locator-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\2.Locator-Locator-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while setting up "page".
+
+    Error: browserContext.newPage: Test timeout of 30000ms exceeded.
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\2.Locator-Locator-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\2.Locator-Locator-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\test-finished-1.png]]
+[[ATTACHMENT|test-results\2.Locator-Locator-firefox\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\video.webm]]
+[[ATTACHMENT|test-results\2.Locator-Locator-firefox\video.webm]]
 
-[[ATTACHMENT|test-results\3.Locator_builtin-Locator-firefox\trace.zip]]
+[[ATTACHMENT|test-results\2.Locator-Locator-firefox\trace.zip]]
+
+[[ATTACHMENT|test-results\2.Locator-Locator-firefox-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>

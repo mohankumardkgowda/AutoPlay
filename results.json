@@ -95,14 +95,14 @@
   },
   "suites": [
     {
-      "title": "3.Locator_builtin.spec.js",
-      "file": "3.Locator_builtin.spec.js",
+      "title": "2.Locator.spec.js",
+      "file": "2.Locator.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
           "title": "Locator",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -114,37 +114,89 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 13498,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 9381,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js:12:23",
+                    "location": {
+                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
+                      "column": 23,
+                      "line": 12
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[onclick=\"logIn()\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[90m//id\u001b[39m\n \u001b[90m 11 |\u001b[39m  \u001b[36mconst\u001b[39m logout\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//a[@id=\"logout2\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m  \u001b[36mawait\u001b[39m expect(logout)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m  \u001b[36mawait\u001b[39m logout\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
+                        "column": 23,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[onclick=\"logIn()\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[90m//id\u001b[39m\n \u001b[90m 11 |\u001b[39m  \u001b[36mconst\u001b[39m logout\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//a[@id=\"logout2\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m  \u001b[36mawait\u001b[39m expect(logout)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m  \u001b[36mawait\u001b[39m logout\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js:12:23\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-24T09:55:48.324Z",
+                  "startTime": "2024-06-24T11:04:02.239Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\test-finished-1.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\video.webm"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\3.Locator_builtin-Locator-firefox\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
+                    "column": 23,
+                    "line": 12
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30043,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                    },
+                    {
+                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-06-24T11:04:13.315Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox-retry1\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "ca4b3ebb1c1d0712d423-15b89b354bef35cfc2f2",
-          "file": "3.Locator_builtin.spec.js",
+          "id": "c1571fbb4f4d4c142229-1ee3f9d1a9d87fd29e83",
+          "file": "2.Locator.spec.js",
           "line": 2,
           "column": 1
         }
@@ -153,11 +205,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-24T09:55:47.461Z",
-    "duration": 17330.213,
-    "expected": 1,
+    "startTime": "2024-06-24T11:04:01.707Z",
+    "duration": 42558.884,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

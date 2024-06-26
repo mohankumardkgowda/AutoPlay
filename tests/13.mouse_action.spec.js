@@ -24,3 +24,6 @@ test.only('mouze double click', async ({ page }) => {
     
     await page.waitForTimeout(5000)
     })
+
+
+    
