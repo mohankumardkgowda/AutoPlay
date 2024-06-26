@@ -15,6 +15,7 @@ test('tezt2',async({page}) => {
     await expect(page.locator("//input[@id='nameuuu']")).toBeEditable()
 })
 
+
 test('tezt3',async({page}) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
 })
