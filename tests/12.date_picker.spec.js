@@ -26,7 +26,6 @@ while(true)
 
    
    
-  
   //working  
   /*
 const datez=await page.$$(".ui-state-default")
