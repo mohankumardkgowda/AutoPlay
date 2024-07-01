@@ -25,6 +25,12 @@ while(true)
   await page.click(`//a[@class='ui-state-default'][text()='${day}']`)
 
    
+
+
+
+
+
+  
    
     /*
 const datez=await page.$$(".ui-state-default")
