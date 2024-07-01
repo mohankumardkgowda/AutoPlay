@@ -14,6 +14,7 @@ await page.waitForTimeout(5000)
 })
 
 
+
 test.only('mouze double click', async ({ page }) => {
   
     await page.goto('https://testautomationpractice.blogspot.com/')
