@@ -10,11 +10,6 @@ await page.click("//button[normalize-space()='Alert']")//open alert button
 await page.waitForTimeout(5000)
 }
 )
-
-
-
-
-
 test('alert ok and cancel', async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
     //enabling dialog window handler

@@ -32,7 +32,8 @@ while(true)
 
   
    
-    /*
+  //working  
+  /*
 const datez=await page.$$(".ui-state-default")
 for(const dt of datez)
     {
