@@ -20,12 +20,14 @@ await page.waitForTimeout(5000)
 test.only('mouze double click', async ({ page }) => {
   
     
-   
+    await cli.dblclick()
 
 
 
     
     await page.goto('https://testautomationpractice.blogspot.com/')
+    await cli.dblclick()
+    await cli.dblclick()
     const cli= await page.locator("//button[normalize-space()='Copy Text']")
     await cli.dblclick()
 
