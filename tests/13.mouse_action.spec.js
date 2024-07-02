@@ -10,6 +10,8 @@ element.hover()
 await ele.click({ele:'right'})
 
 
+
+
 await page.waitForTimeout(5000)
 })
 test.only('mouze double click', async ({ page }) => {
