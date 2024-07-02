@@ -24,12 +24,6 @@ while(true)
 //await page.click("//a[@class='ui-state-default'][text()='${day}']`)
   await page.click(`//a[@class='ui-state-default'][text()='${day}']`)
 
-   
-
-
-
-
-
   
    
   //working  
