@@ -6,6 +6,6 @@ test('Login', async ({ page }) => {
   await expect(page).toHaveTitle('STORE')
   //new merge added
   await page.waitForEvent(3000)
-//workingm
+//workingmqqq
 
 })
