@@ -12,13 +12,13 @@ await page.goto('https://www.demoblaze.com/')
  await expect(logout).toBeVisible()
  await logout.click();
 
-
+/*
  await page.setViewportSize({
     width:
     hei
  })
 
-
+*/
 
  const link= await page.$$("//a")
  for(const linklizt of link)
