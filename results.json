@@ -95,13 +95,13 @@
   },
   "suites": [
     {
-      "title": "2.Locator.spec.js",
-      "file": "2.Locator.spec.js",
+      "title": "1.Login.spec.js",
+      "file": "1.Login.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Locator",
+          "title": "Login",
           "ok": false,
           "tags": [],
           "tests": [
@@ -109,85 +109,100 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 9381,
+                  "duration": 3291,
                   "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js:12:23",
-                    "location": {
-                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
-                      "column": 23,
-                      "line": 12
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[onclick=\"logIn()\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[90m//id\u001b[39m\n \u001b[90m 11 |\u001b[39m  \u001b[36mconst\u001b[39m logout\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//a[@id=\"logout2\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m  \u001b[36mawait\u001b[39m expect(logout)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m  \u001b[36mawait\u001b[39m logout\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                    "message": "TypeError: Cannot read properties of undefined (reading 'log')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'log')"
                   },
                   "errors": [
                     {
+                      "message": "TypeError: Cannot read properties of undefined (reading 'log')"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
-                        "column": 23,
-                        "line": 12
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js",
+                        "column": 14,
+                        "line": 8
                       },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//a[@id=\"logout2\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//a[@id=\"logout2\"]')\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\u001b[2m  -   locator resolved to <a href=\"#\" id=\"logout2\" class=\"nav-link\" onclick=\"…>Log out</a>\u001b[22m\n\u001b[2m  -   unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m  \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[onclick=\"logIn()\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[90m//id\u001b[39m\n \u001b[90m 11 |\u001b[39m  \u001b[36mconst\u001b[39m logout\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//a[@id=\"logout2\"]'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m  \u001b[36mawait\u001b[39m expect(logout)\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m  \u001b[36mawait\u001b[39m logout\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js:12:23\u001b[22m"
+                      "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"3000\"\n============================================================\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'STORE'\u001b[39m)\n \u001b[90m  7 |\u001b[39m   \u001b[90m//new merge added\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForEvent(\u001b[35m3000\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[90m//workingmqqq\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js:8:14\u001b[22m"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Page Title: STORE\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-06-24T11:04:02.239Z",
+                  "startTime": "2024-07-05T10:40:05.836Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\test-failed-1.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\video.webm"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\2.Locator.spec.js",
-                    "column": 23,
-                    "line": 12
-                  }
+                  ]
                 },
                 {
                   "workerIndex": 1,
-                  "status": "timedOut",
-                  "duration": 30043,
+                  "status": "failed",
+                  "duration": 2403,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                    "message": "TypeError: Cannot read properties of undefined (reading 'log')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'log')"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                      "message": "TypeError: Cannot read properties of undefined (reading 'log')"
                     },
                     {
-                      "message": "Error: browserContext.newPage: Test timeout of 30000ms exceeded."
+                      "location": {
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js",
+                        "column": 14,
+                        "line": 8
+                      },
+                      "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"3000\"\n============================================================\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'STORE'\u001b[39m)\n \u001b[90m  7 |\u001b[39m   \u001b[90m//new merge added\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForEvent(\u001b[35m3000\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[90m//workingmqqq\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js:8:14\u001b[22m"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Page Title: STORE\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-06-24T11:04:13.315Z",
+                  "startTime": "2024-07-05T10:40:11.389Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\video.webm"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\2.Locator-Locator-firefox-retry1\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\trace.zip"
                     }
                   ]
                 }
@@ -195,8 +210,8 @@
               "status": "unexpected"
             }
           ],
-          "id": "c1571fbb4f4d4c142229-1ee3f9d1a9d87fd29e83",
-          "file": "2.Locator.spec.js",
+          "id": "3d8755f97b7e14527433-ec6c564b1b013f1f52b7",
+          "file": "1.Login.spec.js",
           "line": 2,
           "column": 1
         }
@@ -205,8 +220,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-24T11:04:01.707Z",
-    "duration": 42558.884,
+    "startTime": "2024-07-05T10:40:05.063Z",
+    "duration": 9446.668,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,

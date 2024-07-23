@@ -1,87 +1,93 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="42.558884">
-<testsuite name="2.Locator.spec.js" timestamp="2024-06-24T11:04:01.736Z" hostname="firefox" tests="1" failures="1" skipped="0" time="39.424" errors="0">
-<testcase name="Locator" classname="2.Locator.spec.js" time="39.424">
-<failure message="2.Locator.spec.js:2:1 Locator" type="FAILURE">
-<![CDATA[  [firefox] › 2.Locator.spec.js:2:1 › Locator ──────────────────────────────────────────────────────
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="9.446667999999999">
+<testsuite name="1.Login.spec.js" timestamp="2024-07-05T10:40:05.118Z" hostname="chromium" tests="1" failures="1" skipped="0" time="5.694" errors="0">
+<testcase name="Login" classname="1.Login.spec.js" time="5.694">
+<failure message="1.Login.spec.js:2:1 Login" type="FAILURE">
+<![CDATA[  [chromium] › 1.Login.spec.js:2:1 › Login ─────────────────────────────────────────────────────────
 
-    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+    TypeError: Cannot read properties of undefined (reading 'log')
 
-    Locator: locator('//a[@id="logout2"]')
-    Expected: visible
-    Received: hidden
-    Call log:
-      - expect.toBeVisible with timeout 5000ms
-      - waiting for locator('//a[@id="logout2"]')
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
-      -   locator resolved to <a href="#" id="logout2" class="nav-link" onclick="…>Log out</a>
-      -   unexpected value "hidden"
+    Error: page.waitForEvent: Test ended.
+    =========================== logs ===========================
+    waiting for event "3000"
+    ============================================================
 
+       6 |   await expect(page).toHaveTitle('STORE')
+       7 |   //new merge added
+    >  8 |   await page.waitForEvent(3000)
+         |              ^
+       9 | //workingmqqq
+      10 |
+      11 | }
 
-      10 |  await page.locator('button[onclick="logIn()"]').click()//id
-      11 |  const logout= await page.locator('//a[@id="logout2"]')
-    > 12 |  await expect(logout).toBeVisible()
-         |                       ^
-      13 |  await logout.click();
-      14 |
-      15 |
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\2.Locator.spec.js:12:23
+        at C:\Users\mohank\Desktop\PlayAutomation\tests\1.Login.spec.js:8:14
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\2.Locator-Locator-firefox\test-failed-1.png
+    test-results\1.Login-Login-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\2.Locator-Locator-firefox\video.webm
+    test-results\1.Login-Login-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\2.Locator-Locator-firefox\trace.zip
+    test-results\1.Login-Login-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace test-results\2.Locator-Locator-firefox\trace.zip
+        npx playwright show-trace test-results\1.Login-Login-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
-    Test timeout of 30000ms exceeded while setting up "page".
+    TypeError: Cannot read properties of undefined (reading 'log')
 
-    Error: browserContext.newPage: Test timeout of 30000ms exceeded.
+    Error: page.waitForEvent: Test ended.
+    =========================== logs ===========================
+    waiting for event "3000"
+    ============================================================
 
-    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\2.Locator-Locator-firefox-retry1\trace.zip
+       6 |   await expect(page).toHaveTitle('STORE')
+       7 |   //new merge added
+    >  8 |   await page.waitForEvent(3000)
+         |              ^
+       9 | //workingmqqq
+      10 |
+      11 | }
+
+        at C:\Users\mohank\Desktop\PlayAutomation\tests\1.Login.spec.js:8:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\1.Login-Login-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\1.Login-Login-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\1.Login-Login-chromium-retry1\trace.zip
     Usage:
 
-        npx playwright show-trace test-results\2.Locator-Locator-firefox-retry1\trace.zip
+        npx playwright show-trace test-results\1.Login-Login-chromium-retry1\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\2.Locator-Locator-firefox\test-failed-1.png]]
+<![CDATA[Page Title: STORE
 
-[[ATTACHMENT|test-results\2.Locator-Locator-firefox\video.webm]]
+[[ATTACHMENT|test-results\1.Login-Login-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\2.Locator-Locator-firefox\trace.zip]]
+[[ATTACHMENT|test-results\1.Login-Login-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\2.Locator-Locator-firefox-retry1\trace.zip]]
+[[ATTACHMENT|test-results\1.Login-Login-chromium\trace.zip]]
+Page Title: STORE
+
+[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
