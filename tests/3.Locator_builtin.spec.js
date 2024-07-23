@@ -7,6 +7,7 @@ await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/lo
 const logo = await page.getByAltText('company-branding')//only for alt attribute
 await expect(logo).toBeVisible()
 
+
 await page.getByPlaceholder('Username').fill("Admin") //only for Placeholder attribute
 const by_role = await page.getByRole('button', {type:"submit"})//by role like button,link(not prefered)
 await expect(by_role).toBeVisible()
