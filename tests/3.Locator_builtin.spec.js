@@ -2,6 +2,7 @@ const { test, expect } = require('@playwright/test')//import
 test('Locator', async ({ page }) => {
   
 await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
 const logo = await page.getByAltText('company-branding')//only for alt attribute
 await expect(logo).toBeVisible()
