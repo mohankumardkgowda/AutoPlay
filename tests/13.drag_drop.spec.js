@@ -7,6 +7,5 @@ const location= await page.locator("//div[@id='droppable']")
 
 await ele.dragTo(location)
 
-
 await page.waitForTimeout(5000)
 })
