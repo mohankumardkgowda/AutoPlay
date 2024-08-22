@@ -1,93 +1,13 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="9.446667999999999">
-<testsuite name="1.Login.spec.js" timestamp="2024-07-05T10:40:05.118Z" hostname="chromium" tests="1" failures="1" skipped="0" time="5.694" errors="0">
-<testcase name="Login" classname="1.Login.spec.js" time="5.694">
-<failure message="1.Login.spec.js:2:1 Login" type="FAILURE">
-<![CDATA[  [chromium] › 1.Login.spec.js:2:1 › Login ─────────────────────────────────────────────────────────
-
-    TypeError: Cannot read properties of undefined (reading 'log')
-
-    Error: page.waitForEvent: Test ended.
-    =========================== logs ===========================
-    waiting for event "3000"
-    ============================================================
-
-       6 |   await expect(page).toHaveTitle('STORE')
-       7 |   //new merge added
-    >  8 |   await page.waitForEvent(3000)
-         |              ^
-       9 | //workingmqqq
-      10 |
-      11 | }
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\1.Login.spec.js:8:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\1.Login-Login-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TypeError: Cannot read properties of undefined (reading 'log')
-
-    Error: page.waitForEvent: Test ended.
-    =========================== logs ===========================
-    waiting for event "3000"
-    ============================================================
-
-       6 |   await expect(page).toHaveTitle('STORE')
-       7 |   //new merge added
-    >  8 |   await page.waitForEvent(3000)
-         |              ^
-       9 | //workingmqqq
-      10 |
-      11 | }
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\1.Login.spec.js:8:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\1.Login-Login-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\1.Login-Login-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.418610000000001">
+<testsuite name="15.keyboard_action.spec.js" timestamp="2024-08-02T13:35:55.610Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.653" errors="0">
+<testcase name="keyboard action" classname="15.keyboard_action.spec.js" time="13.653">
 <system-out>
-<![CDATA[Page Title: STORE
+<![CDATA[
+[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\1.Login-Login-chromium\test-failed-1.png]]
+[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\1.Login-Login-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\1.Login-Login-chromium\trace.zip]]
-Page Title: STORE
-
-[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\1.Login-Login-chromium-retry1\trace.zip]]
+[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

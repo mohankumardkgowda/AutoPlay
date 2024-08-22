@@ -95,14 +95,14 @@
   },
   "suites": [
     {
-      "title": "1.Login.spec.js",
-      "file": "1.Login.spec.js",
+      "title": "15.keyboard_action.spec.js",
+      "file": "15.keyboard_action.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login",
-          "ok": false,
+          "title": "keyboard action",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -114,104 +114,37 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 3291,
-                  "error": {
-                    "message": "TypeError: Cannot read properties of undefined (reading 'log')",
-                    "stack": "TypeError: Cannot read properties of undefined (reading 'log')"
-                  },
-                  "errors": [
-                    {
-                      "message": "TypeError: Cannot read properties of undefined (reading 'log')"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js",
-                        "column": 14,
-                        "line": 8
-                      },
-                      "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"3000\"\n============================================================\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'STORE'\u001b[39m)\n \u001b[90m  7 |\u001b[39m   \u001b[90m//new merge added\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForEvent(\u001b[35m3000\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[90m//workingmqqq\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js:8:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Page Title: STORE\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 13653,
+                  "errors": [],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-07-05T10:40:05.836Z",
+                  "startTime": "2024-08-02T13:35:56.322Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\video.webm"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium\\trace.zip"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 2403,
-                  "error": {
-                    "message": "TypeError: Cannot read properties of undefined (reading 'log')",
-                    "stack": "TypeError: Cannot read properties of undefined (reading 'log')"
-                  },
-                  "errors": [
-                    {
-                      "message": "TypeError: Cannot read properties of undefined (reading 'log')"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js",
-                        "column": 14,
-                        "line": 8
-                      },
-                      "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"3000\"\n============================================================\n\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'STORE'\u001b[39m)\n \u001b[90m  7 |\u001b[39m   \u001b[90m//new merge added\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForEvent(\u001b[35m3000\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[90m//workingmqqq\u001b[39m\n \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\1.Login.spec.js:8:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Page Title: STORE\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-07-05T10:40:11.389Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\1.Login-Login-chromium-retry1\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "3d8755f97b7e14527433-ec6c564b1b013f1f52b7",
-          "file": "1.Login.spec.js",
+          "id": "230b63ae7dcb08dd0cfc-a791bebec21ab2fdc73a",
+          "file": "15.keyboard_action.spec.js",
           "line": 2,
           "column": 1
         }
@@ -220,11 +153,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-07-05T10:40:05.063Z",
-    "duration": 9446.668,
-    "expected": 0,
+    "startTime": "2024-08-02T13:35:55.574Z",
+    "duration": 15418.61,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
