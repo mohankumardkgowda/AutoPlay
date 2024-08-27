@@ -1,4 +1,6 @@
 //npx Playwright test --headed 19.group.spec.js --project=chromium
+
+//npx playwright test --headed 19.group.spec.js --project=chromium -g 'begin'
 const { test, expect } = require('@playwright/test')//import
 test.beforeAll(async() => {
     console.log('beforeAll')

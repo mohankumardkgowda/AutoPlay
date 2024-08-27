@@ -5,22 +5,25 @@ await page.goto('https://testautomationpractice.blogspot.com/')
 //await page.locator("//input[@id='datepicker']").fill("05/19/2024")
 await page.locator("//input[@id='datepicker']").click()
 const year="2024"
-const mnt="June"
+const mnt="October"
 const day="15"
-while(true)
-    {
-        const currentmnt=await page.locator("//span[@class='ui-datepicker-month']").textContent()
-        const currenttear=await page.locator("//span[@class='ui-datepicker-year']").textContent()
+while (true) {
+    const currentmnt = await page.locator("//span[@class='ui-datepicker-month']").textContent();
+    const currentyear = await page.locator("//span[@class='ui-datepicker-year']").textContent();
 
-        if(currenttear==year && currentmnt==mnt){
-            break;
-        }
-        if(year>=2024){
-        await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-e']").click()
-    }else{
-        await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-w']").click()
+    if (currentyear === year && currentmnt === mnt) {
+        break;
     }
+
+    // Check if we need to navigate forward or backward in the calendar
+    if (currentyear < year || (currentyear === year && new Date(`${mnt} 1, ${year}`) > new Date(`${currentmnt} 1, ${currentyear}`))) {
+        await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-e']").click();
+    } else {
+        await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-w']").click();
     }
+}
+
+//await page.click(`//a[@class='ui-state-default'][text()='${day}']`);
 //await page.click("//a[@class='ui-state-default'][text()='${day}']`)
   await page.click(`//a[@class='ui-state-default'][text()='${day}']`)
 

@@ -95,13 +95,13 @@
   },
   "suites": [
     {
-      "title": "15.keyboard_action.spec.js",
-      "file": "15.keyboard_action.spec.js",
+      "title": "27.multiple_page.spec.js",
+      "file": "27.multiple_page.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "keyboard action",
+          "title": "multiple page",
           "ok": true,
           "tags": [],
           "tests": [
@@ -115,27 +115,31 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13653,
+                  "duration": 13647,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m2\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-08-02T13:35:56.322Z",
+                  "startTime": "2024-08-27T13:38:46.465Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\test-finished-2.png"
                     },
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\video.webm"
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\15.keyboard_action-keyboard-action-chromium\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -143,9 +147,100 @@
               "status": "expected"
             }
           ],
-          "id": "230b63ae7dcb08dd0cfc-a791bebec21ab2fdc73a",
-          "file": "15.keyboard_action.spec.js",
+          "id": "ee2aba6399dab3cb4fa9-5fcd7a3958f9ac4af200",
+          "file": "27.multiple_page.spec.js",
           "line": 2,
+          "column": 1
+        },
+        {
+          "title": "auto multiple page",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31133,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-08-27T13:39:00.671Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-3.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30689,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-08-27T13:39:33.619Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ee2aba6399dab3cb4fa9-e4903338082d8aaadc74",
+          "file": "27.multiple_page.spec.js",
+          "line": 21,
           "column": 1
         }
       ]
@@ -153,11 +248,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-02T13:35:55.574Z",
-    "duration": 15418.61,
+    "startTime": "2024-08-27T13:38:45.525Z",
+    "duration": 79281.047,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

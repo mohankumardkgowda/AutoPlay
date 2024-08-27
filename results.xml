@@ -1,13 +1,73 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.418610000000001">
-<testsuite name="15.keyboard_action.spec.js" timestamp="2024-08-02T13:35:55.610Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.653" errors="0">
-<testcase name="keyboard action" classname="15.keyboard_action.spec.js" time="13.653">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="79.281047">
+<testsuite name="27.multiple_page.spec.js" timestamp="2024-08-27T13:38:45.677Z" hostname="chromium" tests="2" failures="1" skipped="0" time="75.469" errors="0">
+<testcase name="multiple page" classname="27.multiple_page.spec.js" time="13.647">
+<system-out>
+<![CDATA[[33m2[39m
+
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-chromium\test-finished-2.png]]
+
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\27.multiple_page-multiple-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="auto multiple page" classname="27.multiple_page.spec.js" time="61.822">
+<failure message="27.multiple_page.spec.js:21:1 auto multiple page" type="FAILURE">
+<![CDATA[  [chromium] › 27.multiple_page.spec.js:21:1 › auto multiple page ──────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\27.multiple_page-auto-multiple-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\27.multiple_page-auto-multiple-page-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\27.multiple_page-auto-multiple-page-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\test-finished-1.png]]
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-2.png]]
 
-[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\video.webm]]
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\15.keyboard_action-keyboard-action-chromium\trace.zip]]
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium\test-failed-3.png]]
+
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\27.multiple_page-auto-multiple-page-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>

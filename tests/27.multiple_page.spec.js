@@ -1,6 +1,6 @@
 const { test, expect,chromium } = require('@playwright/test')//import
 test('multiple page', async()=>{
-   
+   //different tab in one browzer
 const browzer=await chromium.launch()
 const context=await browzer.newContext()
 
@@ -17,7 +17,7 @@ await page1.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/l
 await expect(page1).toHaveURL("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
 })
-
+//in one tab iit will open multiple url
 test('auto multiple page', async()=>{
    
     const browzer=await chromium.launch()
