@@ -4,7 +4,6 @@ page.goto("https://www.facebook.com/")
 await page.locator("//input[@name='email']").fill("abc")
 await page.locator("//input[@type='password']").fill("xyz")
 await page.locator("//button[@name='login']").click()
-00000000000
 //npx playwright test --headed --project=chromium example.spec.js
 //npx playwright show-trace test-results\example-has-title-chromium-retry1\trace.zip
 //npx playwright codegen  
