@@ -89,71 +89,19 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.44.1",
+    "version": "1.46.1",
     "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "27.multiple_page.spec.js",
-      "file": "27.multiple_page.spec.js",
+      "title": "example.spec.js",
+      "file": "example.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "multiple page",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 13647,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33m2\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-08-27T13:38:46.465Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\test-finished-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-multiple-page-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "ee2aba6399dab3cb4fa9-5fcd7a3958f9ac4af200",
-          "file": "27.multiple_page.spec.js",
-          "line": 2,
-          "column": 1
-        },
-        {
-          "title": "auto multiple page",
+          "title": "page image",
           "ok": false,
           "tags": [],
           "tests": [
@@ -166,81 +114,103 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31133,
+                  "status": "failed",
+                  "duration": 8784,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n",
+                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48",
+                    "location": {
+                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                      "column": 48,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      "location": {
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                        "column": 48,
+                        "line": 6
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-08-27T13:39:00.671Z",
+                  "startTime": "2024-09-20T11:17:14.371Z",
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\test-failed-3.png"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium\\trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                    "column": 48,
+                    "line": 6
+                  }
                 },
                 {
                   "workerIndex": 1,
-                  "status": "timedOut",
-                  "duration": 30689,
+                  "status": "failed",
+                  "duration": 6416,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n",
+                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48",
+                    "location": {
+                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                      "column": 48,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      "location": {
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                        "column": 48,
+                        "line": 6
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2024-08-27T13:39:33.619Z",
+                  "startTime": "2024-09-20T11:17:24.131Z",
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium-retry1\\test-failed-1.png"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium-retry1\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\27.multiple_page-auto-multiple-page-chromium-retry1\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium-retry1\\trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
+                    "column": 48,
+                    "line": 6
+                  }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "ee2aba6399dab3cb4fa9-e4903338082d8aaadc74",
-          "file": "27.multiple_page.spec.js",
-          "line": 21,
+          "id": "dd9b2edffe9b7501040c-a75775dab0d100ff8260",
+          "file": "example.spec.js",
+          "line": 2,
           "column": 1
         }
       ]
@@ -248,9 +218,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-27T13:38:45.525Z",
-    "duration": 79281.047,
-    "expected": 1,
+    "startTime": "2024-09-20T11:17:13.831Z",
+    "duration": 17222.197,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0
