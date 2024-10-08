@@ -1,3 +1,0 @@
-beforeEach
-tezt3
-afterEach

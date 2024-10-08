@@ -1,75 +1,50 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="17.222197">
-<testsuite name="example.spec.js" timestamp="2024-09-20T11:17:13.904Z" hostname="chromium" tests="1" failures="1" skipped="0" time="15.2" errors="0">
-<testcase name="page image" classname="example.spec.js" time="15.2">
-<failure message="example.spec.js:2:1 page image" type="FAILURE">
-<![CDATA[  [chromium] › example.spec.js:2:1 › page image ────────────────────────────────────────────────────
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="33.61905699999997">
+<testsuite name="10.alert.spec.js" timestamp="2024-10-03T08:50:09.820Z" hostname="chromium" tests="1" failures="1" skipped="0" time="32.219" errors="0">
+<testcase name="alert ok and cancel" classname="10.alert.spec.js" time="32.219">
+<failure message="10.alert.spec.js:14:1 alert ok and cancel" type="FAILURE">
+<![CDATA[  [chromium] › 10.alert.spec.js:14:1 › alert ok and cancel ─────────────────────────────────────────
 
-    Error: locator.click: Target page, context or browser has been closed
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
     Call log:
-      - waiting for locator('//button[@name=\'loginu\']')
+      - waiting for locator('//button[normalize-space()=\'Confirm Box\']')
 
 
-      4 | await page.locator("//input[@name='email']").fill("abc")
-      5 | await page.locator("//input[@type='password']").fill("xyz")
-    > 6 | await page.locator("//button[@name='loginu']").click()
-        |                                                ^
-      7 |
-      8 |
-      9 |
+      21 |         await dialog.dismiss()
+      22 |     })
+    > 23 |     await page.click("//button[normalize-space()='Confirm Box']")
+         |                ^
+      24 |     await page.waitForTimeout(5000)   
+      25 |     }
+      26 |     )
 
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\example.spec.js:6:48
+        at C:\Users\mohank\Desktop\PlayAutomation\tests\10.alert.spec.js:23:16
 
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\example-page-image-chromium\video.webm
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\10.alert-alert-ok-and-cancel-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\example-page-image-chromium\trace.zip
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\10.alert-alert-ok-and-cancel-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\10.alert-alert-ok-and-cancel-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace test-results\example-page-image-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.click: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('//button[@name=\'loginu\']')
-
-
-      4 | await page.locator("//input[@name='email']").fill("abc")
-      5 | await page.locator("//input[@type='password']").fill("xyz")
-    > 6 | await page.locator("//button[@name='loginu']").click()
-        |                                                ^
-      7 |
-      8 |
-      9 |
-
-        at C:\Users\mohank\Desktop\PlayAutomation\tests\example.spec.js:6:48
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\example-page-image-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\example-page-image-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\example-page-image-chromium-retry1\trace.zip
+        npx playwright show-trace test-results\10.alert-alert-ok-and-cancel-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\example-page-image-chromium\video.webm]]
+[[ATTACHMENT|test-results\10.alert-alert-ok-and-cancel-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\example-page-image-chromium\trace.zip]]
+[[ATTACHMENT|test-results\10.alert-alert-ok-and-cancel-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\example-page-image-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\example-page-image-chromium-retry1\trace.zip]]
+[[ATTACHMENT|test-results\10.alert-alert-ok-and-cancel-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

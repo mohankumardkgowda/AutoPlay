@@ -34,7 +34,7 @@
       [
         "C:\\Users\\mohank\\Desktop\\PlayAutomation\\node_modules\\allure-playwright\\dist\\index.js",
         {
-          "outputFolder": "my-allure-results"
+          "outputFolder": "my-allure-resultsnew"
         }
       ]
     ],
@@ -47,7 +47,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
@@ -61,7 +61,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
@@ -75,7 +75,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
@@ -95,13 +95,13 @@
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
+      "title": "10.alert.spec.js",
+      "file": "10.alert.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "page image",
+          "title": "alert ok and cancel",
           "ok": false,
           "tags": [],
           "tests": [
@@ -113,104 +113,55 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 8784,
+                  "workerIndex": 2,
+                  "status": "timedOut",
+                  "duration": 32219,
                   "error": {
-                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n",
-                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48",
-                    "location": {
-                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                      "column": 48,
-                      "line": 6
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                        "column": 48,
-                        "line": 6
+                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\10.alert.spec.js",
+                        "column": 16,
+                        "line": 23
                       },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48\u001b[22m"
+                      "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//button[normalize-space()=\\'Confirm Box\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mdismiss()\n \u001b[90m 22 |\u001b[39m     })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[normalize-space()='Confirm Box']\"\u001b[39m)\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)   \n \u001b[90m 25 |\u001b[39m     }\n \u001b[90m 26 |\u001b[39m     )\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\10.alert.spec.js:23:16\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-20T11:17:14.371Z",
+                  "startTime": "2024-10-03T08:50:10.278Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\test-failed-1.png"
+                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium\\video.webm"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium\\trace.zip"
+                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                    "column": 48,
-                    "line": 6
-                  }
-                },
-                {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 6416,
-                  "error": {
-                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n",
-                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48",
-                    "location": {
-                      "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                      "column": 48,
-                      "line": 6
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                        "column": 48,
-                        "line": 6
-                      },
-                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//button[@name=\\'loginu\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='email']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"abc\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@type='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"xyz\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@name='loginu']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m   |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js:6:48\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-09-20T11:17:24.131Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\example-page-image-chromium-retry1\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\example.spec.js",
-                    "column": 48,
-                    "line": 6
-                  }
+                  ]
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "dd9b2edffe9b7501040c-a75775dab0d100ff8260",
-          "file": "example.spec.js",
-          "line": 2,
+          "id": "2e711f180f78027f1ee1-1c4279c858e34ef89a75",
+          "file": "10.alert.spec.js",
+          "line": 14,
           "column": 1
         }
       ]
@@ -218,8 +169,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-20T11:17:13.831Z",
-    "duration": 17222.197,
+    "startTime": "2024-10-03T08:50:09.262Z",
+    "duration": 33619.05699999997,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,

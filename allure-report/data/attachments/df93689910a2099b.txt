@@ -1,4 +1,0 @@
-beforeAll
-beforeEach
-tezt1
-afterEach
