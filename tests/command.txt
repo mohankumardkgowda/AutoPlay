@@ -1,0 +1,29 @@
+
+git push
+npx Playwright test 
+npx Playwright test --headed  
+npx Playwright test --headed Login.spec.js   
+npx playwright show-report
+npx Playwright test --headed Locator.spec.js --project=chromium   
+npx playwright codegen --device "iPhone 13"  
+npx playwright test --trace on   
+npx Playwright test --headed 23.tag.spec.js --project=chromium --g@sanity  
+npx Playwright test --headed 23.tag.spec.js --project=chromium --g @sanity   
+npx Playwright test tests\23.tag.spec.js --project=chromium --grep @sanity  
+npx Playwright test tests\23.tag.spec.js --project=chromium --grep @smoke@unit@sanity
+px Playwright test tests\23.tag.spec.js --project=chromium --grep @regression@smoke@unit@sanity
+npx Playwright test 23.tag.spec.js --project=chromium --grep "@regression|@smoke" 
+npx playwright show-trace test-results\27.multiple_page-auto-multiple-page-chromium\trace.zip
+allure generate allure-results -o allure-report --clean  
+sudo npm install -g allure-commandline --save-dev    
+allure generate my_allure_report -o allure-report --clean    
+allure open allure-results
+npx Playwright test --headed 30.retry.spec.js --project=chromium --retries=3 
+npx playwright show-trace test-results\19.group-begin-grouping1-chromium   
+npx Playwright test 23.tag.spec.js --project=chromium --grep @regression  
+git add.   
+git commit -am "commit1"    
+git checkout ex_01 
+git merge ex_01    
+git stash list  
+git stash pop 
