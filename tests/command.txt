@@ -22,7 +22,7 @@ npx Playwright test --headed 30.retry.spec.js --project=chromium --retries=3
 npx playwright show-trace test-results\19.group-begin-grouping1-chromium   
 npx Playwright test 23.tag.spec.js --project=chromium --grep @regression  
 git add.   
-git commit -am "commit1"    
+git commit -m "commit1"    
 git checkout ex_01 
 git merge ex_01    
 git stash list  

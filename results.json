@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -47,7 +45,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
@@ -61,7 +59,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
@@ -75,7 +73,7 @@
       {
         "outputDir": "C:/Users/mohank/Desktop/PlayAutomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
@@ -93,87 +91,19 @@
     "workers": 3,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "10.alert.spec.js",
-      "file": "10.alert.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "alert ok and cancel",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "timedOut",
-                  "duration": 32219,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\10.alert.spec.js",
-                        "column": 16,
-                        "line": 23
-                      },
-                      "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//button[normalize-space()=\\'Confirm Box\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m dialog\u001b[33m.\u001b[39mdismiss()\n \u001b[90m 22 |\u001b[39m     })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[normalize-space()='Confirm Box']\"\u001b[39m)\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)   \n \u001b[90m 25 |\u001b[39m     }\n \u001b[90m 26 |\u001b[39m     )\u001b[0m\n\n\u001b[2m    at C:\\Users\\mohank\\Desktop\\PlayAutomation\\tests\\10.alert.spec.js:23:16\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T08:50:10.278Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\mohank\\Desktop\\PlayAutomation\\test-results\\10.alert-alert-ok-and-cancel-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "2e711f180f78027f1ee1-1c4279c858e34ef89a75",
-          "file": "10.alert.spec.js",
-          "line": 14,
-          "column": 1
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2024-10-03T08:50:09.262Z",
-    "duration": 33619.05699999997,
+    "startTime": "2025-01-14T12:30:46.703Z",
+    "duration": 30.111999999999966,
     "expected": 0,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
